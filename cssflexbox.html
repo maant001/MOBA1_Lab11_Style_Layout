@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #010407;
+    }
+
+    .flex-container > div {
+      background-color: #f1f1f1;
+      width: 500px;
+      margin: 10px;
+
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    @media only screen and (orientation: portrait) {
+      body {
+        background-color: lightgreen;
+      }
+      input, label {
+        display:block;
+      }
+
+
+    }
+
+    @media only screen and (orientation: landscape) {
+      body {
+        background-color: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Flexbox Exercise (THIS IS A HEADER)</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="John"><br>
+    </form>
+  </div>
+  <div>3</div>
+</div>
+
+<footer>
+  <p>THIS IS A FOOTER<br>
+</footer>
+
+</body>
+</html>
+
+
+
